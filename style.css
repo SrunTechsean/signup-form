@@ -117,7 +117,8 @@ h6 {
 
 .signup-form__caption {
     grid-area: 1 / span 2;
-    font-weight: 500;
+    font-weight: 600;
+    color: var(--primary);
 }
 
 .signup-form__submit {
@@ -129,8 +130,14 @@ h6 {
 .btn--primary {
     width: 20rem;
     aspect-ratio: 5 / 1;
+    font-weight: 600;
     color: var(--background-white);
     background-color: var(--primary);
     border: none;
     border-radius: var(--radius-sm);
+}
+
+.signup-form__question {
+    padding-top: 1rem;
+    color: var(--text-secondary);
 }
