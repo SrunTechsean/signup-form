@@ -67,3 +67,38 @@ h5,
 h6 {
     text-wrap: balance;
 }
+
+.auth-page {
+    display: grid;
+    grid-template-columns: calc(40%) 1fr;
+    height: 100vh;
+}
+
+.auth-page__illustration {
+    background-color: #22ba7d;
+}
+
+.auth-page__form {
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    background-color: #efeff2;
+}
+
+.signup-form {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.signup-form__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form__caption {
+    position: absolute;
+    top: -5rem;
+    width: 100%;
+}
