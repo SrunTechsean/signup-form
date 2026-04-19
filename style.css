@@ -98,7 +98,10 @@ h6 {
 }
 
 .signup-form__caption {
-    position: absolute;
-    top: -5rem;
-    width: 100%;
+    grid-area: 1 / span 2;
+}
+
+.signup-form__submit {
+    display: flex;
+    flex-direction: column;
 }
