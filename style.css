@@ -1,3 +1,19 @@
+:root {
+    --primary: #22ba7d;
+    --primary-dark: #0a955e;
+    --primary-light: #c9f7e2;
+
+    --text-primary: #343b4b;
+    --text-secondary: #70757d;
+
+    --background-grey: #efeff2;
+    --background-white: #fff;
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+
+    --shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -81,7 +97,7 @@ h6 {
 .auth-page__form {
     display: grid;
     place-items: center;
-    padding: 2rem;
+    padding: 0 10rem 0 3rem;
     background-color: #efeff2;
 }
 
@@ -89,7 +105,8 @@ h6 {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    row-gap: 2rem;
+    column-gap: 5rem;
     width: 100%;
 }
 
@@ -100,9 +117,20 @@ h6 {
 
 .signup-form__caption {
     grid-area: 1 / span 2;
+    font-weight: 500;
 }
 
 .signup-form__submit {
     display: flex;
     flex-direction: column;
+    padding-top: 1rem;
+}
+
+.btn--primary {
+    width: 20rem;
+    aspect-ratio: 5 / 1;
+    color: var(--background-white);
+    background-color: var(--primary);
+    border: none;
+    border-radius: var(--radius-sm);
 }
