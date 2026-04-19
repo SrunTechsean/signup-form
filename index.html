@@ -7,9 +7,49 @@
         <title>Sign-up Form</title>
     </head>
     <body>
-        <main class="wrapper">
-            <div class="img-container"></div>
-            <div class="form-container"></div>
+        <main class="auth-page">
+            <aside class="auth-page__illustration"></aside>
+            <section class="auth-page__form">
+                <form action="" class="signup-form">
+                    <h1 class="signup-form__caption">Sign Up SeanTrack</h1>
+                    <div class="signup-form__field">
+                        <label for="first_name">First name:</label>
+                        <input type="text" id="first_name" name="first_name">
+                    </div>
+                    <div class="signup-form__field">
+                        <label for="last_name">Last name</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
+                    <div class="signup-form__field">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="signup-form__field">
+                        <label for="phone_number">Phone</label>
+                        <input type="number" id="phone_number" name="phone_number">
+                    </div>
+                    <div class="signup-form__field">
+                        <label for="password">Password:</label>
+                        <input type="text" id="password" name="password">
+                    </div>
+                    <div class="signup-form__field">
+                        <label for="confirm_password">Confirm Password:</label>
+                        <input
+                            type="password"
+                            id="confirm_password"
+                            name="confirm_password"
+                        >
+                    </div>
+                    <div class="signup-form__submit">
+                        <button class="btn btn--primary" type="submit">
+                            Create Account
+                        </button>
+                        <span class="signup-form__question">
+                            Already have an account? <a href="#">LOG IN</a>
+                        </span>
+                    </div>
+                </form>
+            </section>
         </main>
     </body>
 </html>
