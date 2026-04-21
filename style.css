@@ -106,7 +106,7 @@ h6 {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    row-gap: 3rem;
     column-gap: 5rem;
     width: 100%;
 }
@@ -118,7 +118,7 @@ h6 {
 
 .signup-form__caption {
     grid-area: 1 / span 2;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
     font-weight: 600;
     color: var(--primary);
 }
@@ -126,7 +126,7 @@ h6 {
 .signup-form__submit {
     display: flex;
     flex-direction: column;
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 .btn--primary {
@@ -167,4 +167,9 @@ h6 {
     z-index: 1;
     color: var(--text-secondary);
     transform: translateY(-50%);
+    transition: opacity 0.5s ease;
+}
+
+.signup-form__field:focus-within .signup-form__label {
+    opacity: 0;
 }
