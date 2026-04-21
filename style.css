@@ -98,7 +98,7 @@ h6 {
     display: grid;
     place-items: center;
     padding: 0 10rem 0 3rem;
-    background-color: #efeff2;
+    background-color: var(--background-white);
 }
 
 .signup-form {
@@ -140,4 +140,10 @@ h6 {
 .signup-form__question {
     padding-top: 1rem;
     color: var(--text-secondary);
+}
+
+.link {
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
 }
