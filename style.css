@@ -11,6 +11,7 @@
 
     --radius-sm: 8px;
     --radius-md: 12px;
+    --radius-btn: 20px;
 
     --shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
@@ -134,7 +135,7 @@ h6 {
     color: var(--background-white);
     background-color: var(--primary);
     border: none;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-btn);
 }
 
 .signup-form__question {
@@ -146,4 +147,23 @@ h6 {
     font-weight: 600;
     color: var(--primary);
     text-decoration: none;
+}
+
+.signup-form__field {
+    position: relative;
+}
+.signup-form__input {
+    height: 4rem;
+    background-color: var(--background-grey);
+    border: none;
+    border-radius: var(--radius-sm);
+}
+
+.signup-form__label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    z-index: 1;
+    color: var(--text-secondary);
+    transform: translateY(-50%);
 }
