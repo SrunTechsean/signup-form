@@ -118,6 +118,7 @@ h6 {
 
 .signup-form__caption {
     grid-area: 1 / span 2;
+    padding-bottom: 4rem;
     font-weight: 600;
     color: var(--primary);
 }
@@ -125,7 +126,7 @@ h6 {
 .signup-form__submit {
     display: flex;
     flex-direction: column;
-    padding-top: 1rem;
+    padding-top: 4rem;
 }
 
 .btn--primary {
