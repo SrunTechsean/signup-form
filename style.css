@@ -160,6 +160,11 @@ h6 {
     border-radius: var(--radius-sm);
 }
 
+.signup-form__input:focus {
+    outline: none;
+    border: 2px solid var(--primary-dark);
+}
+
 .signup-form__label {
     position: absolute;
     top: 50%;
